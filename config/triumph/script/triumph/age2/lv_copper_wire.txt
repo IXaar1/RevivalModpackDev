@@ -1,0 +1,16 @@
+setIcon(<gregtech:cable_copper:5>)
+
+setTranslatedTitle("advancements.age2.lvcopperwire.title")
+setTranslatedDescription("advancements.age2.lvcopperwire.description")
+
+addParent("triumph:age2/wire_cutter")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<ore:cableGtSingleCopper>)
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

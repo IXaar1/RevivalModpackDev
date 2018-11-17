@@ -1,0 +1,35 @@
+{
+  "rules": [
+    {
+      "match": {
+        "blocks": {
+          "blocks": [
+            "ore:treeLeaves"
+          ]
+        }
+      },
+      "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+      "drops": [
+        {
+          "selector": {
+            "weight": {
+              "value": 30
+            }
+          },
+          "item": {
+            "items": [
+              "<minecraft:stick>"
+            ]
+          }
+        },
+        {
+          "selector": {
+            "weight": {
+              "value": 70
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

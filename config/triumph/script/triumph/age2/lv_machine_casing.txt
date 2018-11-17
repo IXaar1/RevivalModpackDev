@@ -1,0 +1,17 @@
+setIcon(<gregtech:machine_casing:1>)
+
+setTranslatedTitle("advancements.age2.lvmachinecasing.title")
+setTranslatedDescription("advancements.age2.lvmachinecasing.description")
+
+addParent("triumph:age2/age2")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<gregtech:machine_casing:1>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

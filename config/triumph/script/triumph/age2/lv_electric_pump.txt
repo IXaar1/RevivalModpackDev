@@ -1,0 +1,17 @@
+setIcon(<gregtech:meta_item_1:32610>)
+
+setTranslatedTitle("advancements.age2.basicelectronicpump.title")
+setTranslatedDescription("advancements.age2.basicelectronicpump.description")
+
+addParent("triumph:age2/electric_motor")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<gregtech:meta_item_1:32610>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

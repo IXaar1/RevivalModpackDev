@@ -1,0 +1,21 @@
+setIcon(<gregtech:meta_item_1:12184>)
+
+setTranslatedTitle("advancements.age1.firststeel.title")
+setTranslatedDescription("advancements.age1.firststeel.description")
+
+addParent("triumph:age1/primitive_blast_furnace")
+addParent("triumph:age1/iron_ore")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<gregtech:meta_item_1:12184>)
+
+criteria = addCriteria("hasFlint", "minecraft:inventory_changed")
+criteria.addItem(<ore:ingotSteel>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

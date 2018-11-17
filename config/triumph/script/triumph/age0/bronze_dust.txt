@@ -1,0 +1,23 @@
+setIcon(<gregtech:meta_item_1:10095>)
+drawDirectLines (false)
+
+setTranslatedTitle("advancements.age0.dustbronze.title")
+setTranslatedDescription("advancements.age0.dustbronze.description")
+
+addParent("triumph:age0/tin_ore")
+addParent("triumph:age0/copper_ore")
+addParent("triumph:age0/flint_mortar")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<ore:dustBronze>)
+
+criteria = addCriteria("hasBronze", "minecraft:inventory_changed")
+criteria.addItem(<ore:ingotBronze>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

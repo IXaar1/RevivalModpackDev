@@ -1,0 +1,16 @@
+setIcon(<minecraft:flint>)
+
+setTranslatedTitle("advancements.age0.flint.title")
+setTranslatedDescription("advancements.age0.flint.description")
+
+addParent("triumph:age0/age0")
+
+hideLines()
+
+criteria = addCriteria("hasFlint", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:flint>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

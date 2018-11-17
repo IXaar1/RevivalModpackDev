@@ -1,0 +1,19 @@
+setIcon(<gregtech:machine:501>)
+
+setTranslatedTitle("advancements.age2.lvmachinehull.title")
+setTranslatedDescription("advancements.age2.lvmachinehull.description")
+
+addParent("triumph:age2/lv_machine_casing")
+addParent("triumph:age2/lv_tin_wire")
+addParent("triumph:age1/wrought_iron")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<gregtech:machine:501>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

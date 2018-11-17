@@ -1,0 +1,17 @@
+setIcon(<gregtech:machine:130>)
+
+setTranslatedTitle("advancements.age2.basicelectricbrewery.title")
+setTranslatedDescription("advancements.age2.basicelectricbrewery.description")
+
+addParent("triumph:age2/lv_electric_pump")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<gregtech:machine:130>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

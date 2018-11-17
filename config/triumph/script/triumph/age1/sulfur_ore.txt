@@ -1,0 +1,34 @@
+setIcon(<gregtech:ore_sulfur_0:2>)
+
+setTranslatedTitle("advancements.age1.sulfurore.title")
+setTranslatedDescription("advancements.age1.irsulfurorenore.description")
+
+addParent("triumph:age1/tough_prospector")
+
+hideLines()
+
+criteria = addCriteria("brokeSulfur", "triumph:player_break_block")
+criteria.setBlock(<ore:oreSulfur>)
+criteria = addCriteria("brokeSulfur", "triumph:player_break_block")
+criteria.setBlock(<ore:oreSandSulfur>)
+criteria = addCriteria("brokeSulfur", "triumph:player_break_block")
+criteria.setBlock(<ore:oreMarbleSulfur>)
+criteria = addCriteria("brokeSulfur", "triumph:player_break_block")
+criteria.setBlock(<ore:oreBlackgraniteSulfur>)
+criteria = addCriteria("brokeSulfur", "triumph:player_break_block")
+criteria.setBlock(<ore:oreRedgraniteSulfur>)
+criteria = addCriteria("brokeSulfur", "triumph:player_break_block")
+criteria.setBlock(<ore:oreEndstoneSulfur>)
+criteria = addCriteria("brokeSulfur", "triumph:player_break_block")
+criteria.setBlock(<ore:oreNetherrackSulfur>)
+criteria = addCriteria("brokeSulfur", "triumph:player_break_block")
+criteria.setBlock(<ore:oreGravelSulfur>)
+criteria = addCriteria("brokeSulfur", "triumph:player_break_block")
+criteria.setBlock(<ore:oreBasaltSulfur>)
+
+setRequirements("any")
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

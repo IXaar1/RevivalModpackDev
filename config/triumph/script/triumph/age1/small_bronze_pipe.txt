@@ -1,0 +1,18 @@
+setIcon(<gregtech:fluid_pipe_bronze:1>)
+
+setTranslatedTitle("advancements.age1.smallbronzepipe.title")
+setTranslatedDescription("advancements.age1.smallbronzepipe.description")
+
+addParent("triumph:age1/wrench")
+addParent("triumph:age1/file")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<ore:pipeSmallBronze>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

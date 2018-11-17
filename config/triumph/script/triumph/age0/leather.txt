@@ -1,0 +1,16 @@
+setIcon(<minecraft:leather>)
+
+setTranslatedTitle("advancements.age0.leather.title")
+setTranslatedDescription("advancements.age0.leather.description")
+
+addParent("triumph:age0/age0")
+addParent("triumph:age0/flint_sword")
+hideLines()
+
+criteria = addCriteria("hasLeather", "minecraft:inventory_changed")
+criteria.addItem(<ore:leather>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

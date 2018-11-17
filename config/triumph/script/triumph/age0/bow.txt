@@ -1,0 +1,17 @@
+setIcon(<minecraft:bow>)
+
+setTranslatedTitle("advancements.age0.bow.title")
+setTranslatedDescription("advancements.age0.bow.description")
+
+addParent("triumph:age0/string")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<minecraft:bow>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

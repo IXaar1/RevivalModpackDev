@@ -1,0 +1,33 @@
+setIcon(<gregtech:ore_diamond_0:10>)
+
+setTranslatedTitle("advancements.age1.diamondore.title")
+setTranslatedDescription("advancements.age1.diamondore.description")
+
+addParent("triumph:age1/tough_prospector")
+
+hideLines()
+
+criteria = addCriteria("brokeDiamondUno", "triumph:player_break_block")
+criteria.setBlock(<ore:oreDiamond>)
+criteria = addCriteria("brokeDiamondDue", "triumph:player_break_block")
+criteria.setBlock(<ore:oreSandDiamond>)
+criteria = addCriteria("brokeDiamondTre", "triumph:player_break_block")
+criteria.setBlock(<ore:oreMarbleDiamond>)
+criteria = addCriteria("brokeDiamondQuatro", "triumph:player_break_block")
+criteria.setBlock(<ore:oreBlackgraniteDiamond>)
+criteria = addCriteria("brokeDiamondCinque", "triumph:player_break_block")
+criteria.setBlock(<ore:oreRedgraniteDiamond>)
+criteria = addCriteria("brokeDiamondSei", "triumph:player_break_block")
+criteria.setBlock(<ore:oreEndstoneDiamond>)
+criteria = addCriteria("brokeDiamondSette", "triumph:player_break_block")
+criteria.setBlock(<ore:oreNetherrackDiamond>)
+criteria = addCriteria("brokeDiamondNove", "triumph:player_break_block")
+criteria.setBlock(<ore:oreGravelDiamond>)
+criteria = addCriteria("brokeDiamondDieci", "triumph:player_break_block")
+criteria.setBlock(<ore:oreBasaltDiamond>)
+setRequirements("any")
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

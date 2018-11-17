@@ -1,0 +1,19 @@
+setIcon(<minecraft:redstone>)
+
+setTranslatedTitle("advancements.age1.redstone.title")
+setTranslatedDescription("advancements.age1.redstone.description")
+
+addParent("triumph:age1/redstone_ore")
+addParent("triumph:age1/cauldron")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<ore:dustRedstone>)
+
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

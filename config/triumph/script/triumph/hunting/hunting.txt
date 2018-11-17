@@ -1,0 +1,18 @@
+setTranslatedTitle("advancements.hunting.root.title")
+
+setTranslatedDescription("advancements.hunting.root.description")
+
+setIcon(<minecraft:skull:2>)
+
+setBackground("minecraft:textures/blocks/cobblestone.png")
+
+setShowToast(false)
+
+setAnnounceToChat(false)
+
+setRequirements("any")
+
+criteria = addCriteria("completedFlintSword", "triumph:completed_advancement")
+criteria.setString("triumph:age0/flint_sword")
+
+setRewardExperience(4)

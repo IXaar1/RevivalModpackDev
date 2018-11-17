@@ -1,0 +1,18 @@
+setIcon(<gregtech:meta_tool:2>)
+
+setTranslatedTitle("advancements.age0.flintshovel.title")
+setTranslatedDescription("advancements.age0.flintshovel.description")
+
+addParent("triumph:age0/crafting_table")
+addParent("triumph:age0/flint")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<gregtech:meta_tool:2>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

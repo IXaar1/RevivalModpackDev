@@ -1,0 +1,19 @@
+setIcon(<gregtech:machine:90>)
+
+setTranslatedTitle("advancements.age2.basicelectricarcfurnace.title")
+setTranslatedDescription("advancements.age2.basicelectricarcfurnace.description")
+
+addParent("triumph:age2/lv_machine_hull")
+addParent("triumph:age2/lv_tin_wire")
+addParent("triumph:age2/basic_electronic_circuit")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<gregtech:machine:90>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

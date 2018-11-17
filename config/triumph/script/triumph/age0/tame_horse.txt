@@ -1,0 +1,23 @@
+setIcon(<animania:entity_egg_draft_horse_foal>)
+
+setTranslatedTitle("advancements.age0.tamehorse.title")
+setTranslatedDescription("advancements.age0.tamehorse.description")
+
+addParent("triumph:age0/saddle")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("tameHorseVanilla", "minecraft:tame_animal")
+criteria.setItem(<minecraft:horse>)
+
+criteria = addCriteria("tameHorseAnimania", "minecraft:tame_animal")
+criteria.setItem(<animania:stallion_draft>)
+setRequirements("any")
+
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)
+setRewardItem(<trophyslots:trophy>)

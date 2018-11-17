@@ -1,0 +1,18 @@
+setTranslatedTitle("advancements.age2.root.title")
+
+setTranslatedDescription("advancements.age2.root.description")
+
+setIcon(<gregtech:meta_item_2:26184>)
+
+setBackground("gregtech:textures/blocks/casings/steam/steel/bottom.png")
+
+setShowToast(false)
+
+setAnnounceToChat(false)
+
+setRequirements("any")
+
+criteria = addCriteria("completedAge1", "triumph:completed_advancement")
+criteria.setString("triumph:age1/first_steel")
+
+setRewardFunction("triumph:age2_trigger")

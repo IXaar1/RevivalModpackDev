@@ -1,0 +1,17 @@
+setIcon(<gregtech:meta_tool:8>)
+
+setTranslatedTitle("advancements.age0.wrench.title")
+setTranslatedDescription("advancements.age0.wrench.description")
+
+addParent("triumph:age1/age1")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<ore:craftingToolWrench>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

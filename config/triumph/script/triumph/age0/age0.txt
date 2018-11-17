@@ -1,0 +1,15 @@
+setTranslatedTitle("advancements.age0.root.title")
+setTranslatedDescription("advancements.age0.root.description")
+
+setIcon(<minecraft:bow>)
+setBackground("minecraft:textures/blocks/cobblestone.png")
+
+setShowToast(false)
+
+setAnnounceToChat(false)
+
+setRequirements("any")
+
+addCriteria("location", "minecraft:location")
+
+setRewardFunction("triumph:age0_trigger")

@@ -1,0 +1,17 @@
+setIcon(<minecraft:crafting_table>)
+
+setTranslatedTitle("advancements.age0.craftingtable.title")
+setTranslatedDescription("advancements.age0.craftingtable.description")
+
+addParent("triumph:age0/stick")
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<minecraft:crafting_table>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)
+setRewardItem(<trophyslots:trophy>)

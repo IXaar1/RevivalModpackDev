@@ -1,0 +1,31 @@
+setIcon(<wolfarmor:leather_wolf_armor>)
+
+setTranslatedTitle("advancements.age0.wolfarmor.title")
+setTranslatedDescription("advancements.age0.wolfarmor.description")
+
+addParent("triumph:age0/tame_wolf")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("craftedLeather", "triumph:player_crafted_item")
+criteria.setItem(<wolfarmor:leather_wolf_armor>)
+
+criteria = addCriteria("craftedIron", "triumph:player_crafted_item")
+criteria.setItem(<wolfarmor:iron_wolf_armor>)
+
+criteria = addCriteria("craftedGold", "triumph:player_crafted_item")
+criteria.setItem(<wolfarmor:gold_wolf_armor>)
+
+criteria = addCriteria("craftedDiamond", "triumph:player_crafted_item")
+criteria.setItem(<wolfarmor:diamond_wolf_armor>)
+
+criteria = addCriteria("craftedChain", "triumph:player_crafted_item")
+criteria.setItem(<wolfarmor:chainmail_wolf_armor>)
+
+setRequirements(any)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

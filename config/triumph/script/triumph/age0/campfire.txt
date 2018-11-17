@@ -1,0 +1,18 @@
+setIcon(<toughasnails:campfire>)
+
+setTranslatedTitle("advancements.age0.campfire.title")
+setTranslatedDescription("advancements.age0.campfire.description")
+
+addParent("triumph:age0/flint_pickaxe")
+addParent("triumph:age0/stick")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<toughasnails:campfire>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

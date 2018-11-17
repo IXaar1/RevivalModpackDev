@@ -1,0 +1,21 @@
+setIcon(<gregtech:machine:510>)
+
+setTranslatedTitle("advancements.age1.primitiveblastfurnace.title")
+setTranslatedDescription("advancements.age1.primitiveblastfurnace.description")
+
+addParent("triumph:age1/bricked_bronze_hull")
+addParent("triumph:age1/wrench")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<gregtech:machine:510>)
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<gregtech:metal_casing:1>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

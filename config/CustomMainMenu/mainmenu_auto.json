@@ -1,0 +1,196 @@
+{
+    "images":
+    {
+	
+		"black":
+        {
+            "image" : "mainmenu:textures/bg_menu.png",
+            "posX" : 99,
+            "posY" : 0,
+            "width" : 155,
+            "height" : 800,
+            "alignment" : "top_left"
+        },
+		"logo":
+        {
+            "image" : "mainmenu:textures/logo.png",
+            "posX" : 50,
+            "posY" : 0,
+            "width" : 250,
+            "height" : 120,
+            "alignment" : "top_left"
+        }
+	
+	},
+    
+    "buttons":
+    {     
+		"singleplayer":
+        {
+            "text" : "\u041e\u0434\u0438\u043d\u043e\u0447\u043d\u0430\u044f \u0438\u0433\u0440\u0430",
+			"normalTextColor" : 000,
+			"hoverTextColor" : 51469,
+			"texture" : "mainmenu:textures/btn.png",			
+            "posX" : 100,
+            "posY" : -30,
+            "width" : 153,
+            "height" : 20,
+			imageWidth : 100,
+			imageHeight : 50,
+			"alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },		
+
+		"multiplayer":
+        {
+            "text" : "\u0418\u0433\u0440\u0430\u0442\u044c \u0441 \u0434\u0440\u0443\u0437\u044c\u044f\u043c\u0438",			
+			"normalTextColor" : 000,
+			"hoverTextColor" : 51469,
+			"texture" : "mainmenu:textures/btn.png",
+            "posX" : 100,
+            "posY" : -10,
+            "width" : 153,
+            "height" : 20,
+			imageWidth : 100,
+			imageHeight : 50,
+			"alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
+            }
+        },
+               
+		"options":
+        {
+            "text" : "\u041d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438",
+			"normalTextColor" : 000,
+			"hoverTextColor" : 51469,
+			"texture" : "mainmenu:textures/btn.png",
+            "posX" : 100,
+            "posY" : 10,
+            "width" : 153,
+            "height" : 20,
+			imageWidth : 100,
+			imageHeight : 50,
+			"alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+		        
+		"language":
+        {
+            "text" : "\u042f\u0437\u044b\u043a",
+			"normalTextColor" : 000,
+			"hoverTextColor" : 51469,
+			"texture" : "mainmenu:textures/btn.png",
+            "posX" : 100,
+            "posY" : 30,
+            "width" : 153,
+            "height" : 20,
+			imageWidth : 100,
+			imageHeight : 50,			
+			"alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "languages"
+            }
+        },
+                    
+        "quit":
+        {
+            "text" : "\u0412\u044b\u0439\u0442\u0438",
+			"normalTextColor" : 16729156,
+			"hoverTextColor" : 14483456,
+			"texture" : "mainmenu:textures/btn.png",
+            "posX" : 100,
+            "posY" : 50,
+            "width" : 153,
+            "height" : 20,
+			imageWidth : 100,
+			imageHeight : 50,
+			"alignment" : "left_center",
+			"hoverText" : "\u0412\u043e\u0437\u0432\u0440\u0430\u0449\u0430\u0439\u0442\u0435\u0441\u044c \u043a \u043d\u0430\u043c:)",
+            "action" : 
+            {
+                "type" : "quit"
+            }
+        },
+		
+        "mods":
+        {
+            "text" : "\u041c\u043e\u0434\u044b (#modsloaded#/#modsactive#)",
+			"normalTextColor" : 000,
+			"hoverTextColor" : 51469,
+			"texture" : "mainmenu:textures/btnMods.png",
+            "posX" : 100,
+            "posY" : 70,
+            "width" : 153,
+            "height" : 20,
+			imageWidth : 100,
+			imageHeight : 50,
+			imageWidth : 100,
+			imageHeight : 50,
+			"alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        }
+	},
+    
+    "texts":
+    {
+        "mojang":
+        {
+            "text" : "SurvivalEra.info - Copyright SurvivalEraProject. Created by: Affect!",
+            "posX" : 2,
+            "posY" : -10,
+            "color" : -1,
+            "alignment" : "bottom_left"
+        },
+        
+		"packTxt":
+        {
+            "text" : "Prometheus Server Modpack - 0.0.1a",
+            "posX" : 2,
+            "posY" : -25,
+            "color" : -1,
+            "alignment" : "bottom_left"
+        }	
+    },
+    
+	
+	"alignments":
+    {
+        "c1":
+        {
+            "factorWidth" : 0.5,
+            "factorHeight" : 0.7
+        },
+ 
+        "c2":
+        {
+            "factorWidth" : 0.2,
+            "factorHeight" : 0.2
+        }
+    },
+	
+    "other":
+    {
+		"background":
+		{
+			"image" : "mainmenu:textures/bg.png",
+			"mode" : "stretch"
+		}
+    }
+}

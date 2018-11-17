@@ -1,0 +1,28 @@
+setIcon(<toughasnails:wool_helmet>)
+
+setTranslatedTitle("advancements.age0.coldprotection.title")
+setTranslatedDescription("advancements.age0.coldprotection.description")
+
+addParent("triumph:age0/age0")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("craftedHelmet", "triumph:player_crafted_item")
+criteria.setItem(<toughasnails:wool_helmet>)
+
+criteria = addCriteria("craftedChestplate", "triumph:player_crafted_item")
+criteria.setItem(<toughasnails:wool_chestplate>)
+
+criteria = addCriteria("craftedLeggins", "triumph:player_crafted_item")
+criteria.setItem(<toughasnails:wool_leggings>)
+
+criteria = addCriteria("craftedBoots", "triumph:player_crafted_item")
+criteria.setItem(<toughasnails:wool_boots>)
+
+setRequirements (all)
+
+setFrameType (goal)
+
+//Rewards
+setRewardExperience(4)

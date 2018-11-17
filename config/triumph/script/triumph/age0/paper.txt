@@ -1,0 +1,16 @@
+setIcon(<minecraft:paper>)
+
+setTranslatedTitle("advancements.age0.paper.title")
+setTranslatedDescription("advancements.age0.paper.description")
+
+addParent("triumph:age0/age0")
+
+hideLines()
+
+criteria = addCriteria("hasFlint", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:paper>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

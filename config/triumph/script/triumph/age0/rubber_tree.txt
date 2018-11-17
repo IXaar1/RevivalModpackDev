@@ -1,0 +1,24 @@
+setIcon(<gregtech:sapling>)
+
+setTranslatedTitle("advancements.age0.rubbertree.title")
+setTranslatedDescription("advancements.age0.rubbertree.description")
+
+addParent("triumph:age0/age0")
+
+hideLines()
+
+criteria = addCriteria("hasRubberWood", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:log>)
+
+criteria = addCriteria("hasRubber", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:meta_item_1:32627>)
+
+criteria = addCriteria("hasRubberSapling", "minecraft:inventory_changed")
+criteria.addItem(<gregtech:sapling>)
+
+setRequirements("any")
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

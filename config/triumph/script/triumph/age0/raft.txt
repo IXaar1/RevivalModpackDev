@@ -1,0 +1,34 @@
+setIcon(<jarm:dark_oak_raft>)
+
+setTranslatedTitle("advancements.age0.raft.title")
+setTranslatedDescription("advancements.age0.raft.description")
+
+addParent("triumph:age0/string")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("craftedOak", "triumph:player_crafted_item")
+criteria.setItem(<jarm:oak_raft>)
+
+criteria = addCriteria("craftedSpruce", "triumph:player_crafted_item")
+criteria.setItem(<jarm:spruce_raft>)
+
+criteria = addCriteria("craftedBirch", "triumph:player_crafted_item")
+criteria.setItem(<jarm:birch_raft>)
+
+criteria = addCriteria("craftedJungle", "triumph:player_crafted_item")
+criteria.setItem(<jarm:jungle_raft>)
+
+criteria = addCriteria("craftedAcacia", "triumph:player_crafted_item")
+criteria.setItem(<jarm:acacia_raft>)
+
+criteria = addCriteria("craftedDarkOak", "triumph:player_crafted_item")
+criteria.setItem(<jarm:dark_oak_raft>)
+
+setRequirements(any)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

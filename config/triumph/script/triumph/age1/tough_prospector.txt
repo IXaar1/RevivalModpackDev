@@ -1,0 +1,17 @@
+setIcon(<prospectors:prospector_low>)
+
+setTranslatedTitle("advancements.age1.toughprospector.title")
+setTranslatedDescription("advancements.age1.toughprospector.description")
+
+addParent("triumph:age1/age1")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<prospectors:prospector_low>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

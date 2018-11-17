@@ -1,0 +1,17 @@
+setIcon(<gregtech:meta_item_1:2065>)
+
+setTranslatedTitle("advancements.age0.sulfurdust.title")
+setTranslatedDescription("advancements.age0.sulfurdust.description")
+
+addParent("triumph:age0/steam_macerator")
+addParent("triumph:age0/sulfur_ore")
+
+hideLines()
+
+criteria = addCriteria("hasFlint", "minecraft:inventory_changed")
+criteria.addItem(<ore:dustSulfur>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

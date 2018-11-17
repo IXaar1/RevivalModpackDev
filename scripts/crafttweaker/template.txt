@@ -1,0 +1,46 @@
+
+ore to ages
+//Age0
+//Copper ore
+//Vanilla stone
+mods.orestages.OreStages.addReplacement("age0", , <minecraft:stone>);
+mods.ItemStages.addItemStage("age0", );
+//Diorite
+mods.orestages.OreStages.addReplacement("age0", ,<minecraft:stone:3>);
+mods.ItemStages.addItemStage("age0", );
+//Granite
+mods.orestages.OreStages.addReplacement("age0", ,<minecraft:stone:1>);
+mods.ItemStages.addItemStage("age0", );
+//Andesite
+mods.orestages.OreStages.addReplacement("age0", ,<minecraft:stone:5>);
+mods.ItemStages.addItemStage("age0", );
+//Bedrock
+mods.orestages.OreStages.addReplacement("age0", ,<minecraft:bedrock>);
+mods.ItemStages.addItemStage("age0", );
+//Gravel
+mods.orestages.OreStages.addReplacement("age0", ,<minecraft:gravel>);
+mods.ItemStages.addItemStage("age0", );
+//Netherrack
+mods.orestages.OreStages.addReplacement("age0", ,<minecraft:netherrack>);
+mods.ItemStages.addItemStage("age0", );
+//End stone
+mods.orestages.OreStages.addReplacement("age0", ,<minecraft:end_stone>);
+mods.ItemStages.addItemStage("age0", );
+//Sandstone
+mods.orestages.OreStages.addReplacement("age0", ,<minecraft:sandstone>);
+mods.ItemStages.addItemStage("age0", );
+//Red sand
+mods.orestages.OreStages.addReplacement("age0", ,<minecraft:sand:1>);
+mods.ItemStages.addItemStage("age0", );
+//Black granite
+mods.orestages.OreStages.addReplacement("age0", ,<gregtech:granite>);
+mods.ItemStages.addItemStage("age0", );
+//Red granite
+mods.orestages.OreStages.addReplacement("age0", ,<gregtech:granite:1>);
+mods.ItemStages.addItemStage("age0", );
+//Marble
+mods.orestages.OreStages.addReplacement("age0", ,<gregtech:mineral>);
+mods.ItemStages.addItemStage("age0", );
+//Basalt
+mods.orestages.OreStages.addReplacement("age0", ,<gregtech:mineral:2>);
+mods.ItemStages.addItemStage("age0", );

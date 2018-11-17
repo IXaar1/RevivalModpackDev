@@ -1,0 +1,19 @@
+setIcon(<gregtech:machine:7>)
+
+setTranslatedTitle("advancements.age1.steamextractor.title")
+setTranslatedDescription("advancements.age1.steamextractor.description")
+
+addParent("triumph:age1/bronze_hull")
+addParent("triumph:age1/file")
+addParent("triumph:age1/small_bronze_pipe")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<gregtech:machine:7>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

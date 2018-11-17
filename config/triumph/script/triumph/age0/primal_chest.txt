@@ -1,0 +1,18 @@
+setIcon(<primalchests:primal_chest>)
+
+setTranslatedTitle("advancements.age0.primalchest.title")
+setTranslatedDescription("advancements.age0.primalchest.description")
+
+addParent("triumph:age0/flint_axe")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<primalchests:primal_chest>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)
+setRewardItem(<trophyslots:trophy>)

@@ -1,0 +1,18 @@
+setIcon(<gregtech:machine:12>)
+
+setTranslatedTitle("advancements.age1.highpressuresteamcompressor.title")
+setTranslatedDescription("advancements.age1.highpressuresteamcompressor.description")
+
+addParent("triumph:age1/bricked_steel_hull")
+addParent("triumph:age1/steam_compressor")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<gregtech:machine:12>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

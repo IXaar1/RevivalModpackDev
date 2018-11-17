@@ -1,0 +1,18 @@
+setIcon(<minecraft:furnace>)
+
+setTranslatedTitle("advancements.age0.furnace.title")
+setTranslatedDescription("advancements.age0.furnace.description")
+
+addParent("triumph:age0/flint_pickaxe")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<minecraft:furnace>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)
+setRewardItem(<trophyslots:trophy>)

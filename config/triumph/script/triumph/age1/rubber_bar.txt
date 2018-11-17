@@ -1,0 +1,19 @@
+setIcon(<gregtech:meta_item_1:10152>)
+
+setTranslatedTitle("advancements.age1.rubberbar.title")
+setTranslatedDescription("advancements.age1.rubberbar.description")
+
+addParent("triumph:age1/steam_alloy_smelter")
+addParent("triumph:age1/raw_rubber")
+addParent("triumph:age1/sulfur_dust")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<ore:ingotRubber>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

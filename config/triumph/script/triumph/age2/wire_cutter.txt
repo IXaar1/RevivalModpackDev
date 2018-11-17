@@ -1,0 +1,17 @@
+setIcon(<gregtech:meta_tool:13>)
+
+setTranslatedTitle("advancements.age2.wirecutter.title")
+setTranslatedDescription("advancements.age2.wirecutter.description")
+
+addParent("triumph:age2/screwdriver")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<ore:craftingToolWireCutter>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

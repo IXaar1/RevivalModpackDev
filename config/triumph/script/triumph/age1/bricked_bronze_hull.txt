@@ -1,0 +1,17 @@
+setIcon(<gregtech:machine_casing:11>)
+
+setTranslatedTitle("advancements.age1.brickedbronzehull.title")
+setTranslatedDescription("advancements.age1.brickedbronzehull.description")
+
+addParent("triumph:age1/hard_hammer")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<gregtech:machine_casing:11>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

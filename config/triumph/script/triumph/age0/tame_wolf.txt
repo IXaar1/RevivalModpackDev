@@ -1,0 +1,20 @@
+setIcon(<minecraft:spawn_egg>)
+
+setTranslatedTitle("advancements.age0.tamewolf.title")
+setTranslatedDescription("advancements.age0.tamewolf.description")
+
+addParent("triumph:age0/age0")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("tameHorseVanilla", "minecraft:tame_animal")
+criteria.setItem(<minecraft:wolf>)
+setRequirements()
+
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)
+setRewardItem(<trophyslots:trophy>)

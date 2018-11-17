@@ -1,0 +1,18 @@
+setIcon(<minecraft:cauldron>)
+
+setTranslatedTitle("advancements.age1.cauldron.title")
+setTranslatedDescription("advancements.age1.cauldron.description")
+
+addParent("triumph:age1/steam_compressor")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<minecraft:cauldron>)
+
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

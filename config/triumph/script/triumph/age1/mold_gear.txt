@@ -1,0 +1,17 @@
+setIcon(<gregtech:meta_item_1:32303>)
+
+setTranslatedTitle("advancements.age1.moldgear.title")
+setTranslatedDescription("advancements.age1.moldgear.description")
+
+addParent("triumph:age1/steam_alloy_smelter")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("hasMoldGear", "minecraft:inventory_changed")
+criteria.setItem(<gregtech:meta_item_1:32303>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

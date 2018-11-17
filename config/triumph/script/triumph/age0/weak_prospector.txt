@@ -1,0 +1,19 @@
+setIcon(<prospectors:prospector_lowest>)
+
+setTranslatedTitle("advancements.age0.weakprospector.title")
+setTranslatedDescription("advancements.age0.weakprospector.description")
+
+addParent("triumph:age0/sharp_bone")
+addParent("triumph:age0/furnace")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<prospectors:prospector_lowest>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)
+setRewardItem(<trophyslots:trophy>)

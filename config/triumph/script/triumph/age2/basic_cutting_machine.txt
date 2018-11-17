@@ -1,0 +1,19 @@
+setIcon(<gregtech:machine:220>)
+
+setTranslatedTitle("advancements.age2.basiccuttingmachine.title")
+setTranslatedDescription("advancements.age2.basiccuttingmachine.description")
+
+addParent("triumph:age2/lv_conveyor_module")
+addParent("triumph:age2/electric_motor")
+addParent("triumph:age1/mold_gear")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<gregtech:machine:220>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

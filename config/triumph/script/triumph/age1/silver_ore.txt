@@ -1,0 +1,33 @@
+setIcon(<gregtech:ore_silver_0:10>)
+
+setTranslatedTitle("advancements.age1.silverore.title")
+setTranslatedDescription("advancements.age1.silverore.description")
+
+addParent("triumph:age1/tough_prospector")
+
+hideLines()
+
+criteria = addCriteria("brokeSilver", "triumph:player_break_block")
+criteria.setBlock(<ore:oreSilver>)
+criteria = addCriteria("brokeSilver", "triumph:player_break_block")
+criteria.setBlock(<ore:oreSandSilver>)
+criteria = addCriteria("brokeSilver", "triumph:player_break_block")
+criteria.setBlock(<ore:oreMarbleSilver>)
+criteria = addCriteria("brokeSilver", "triumph:player_break_block")
+criteria.setBlock(<ore:oreBlackgraniteSilver>)
+criteria = addCriteria("brokeSilver", "triumph:player_break_block")
+criteria.setBlock(<ore:oreRedgraniteSilver>)
+criteria = addCriteria("brokeSilver", "triumph:player_break_block")
+criteria.setBlock(<ore:oreEndstoneSilver>)
+criteria = addCriteria("brokeSilver", "triumph:player_break_block")
+criteria.setBlock(<ore:oreNetherrackSilver>)
+criteria = addCriteria("brokeSilver", "triumph:player_break_block")
+criteria.setBlock(<ore:oreGravelSilver>)
+criteria = addCriteria("brokeSilver", "triumph:player_break_block")
+criteria.setBlock(<ore:oreBasaltSilver>)
+setRequirements("any")
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

@@ -1,0 +1,18 @@
+setTranslatedTitle("advancements.age1.root.title")
+
+setTranslatedDescription("advancements.age1.root.description")
+
+setIcon(<gregtech:meta_item_2:26095>)
+
+setBackground("gregtech:textures/blocks/casings/steam/bronze/bottom.png")
+
+setShowToast(false)
+
+setAnnounceToChat(false)
+
+setRequirements("any")
+
+criteria = addCriteria("completedAge0", "triumph:completed_advancement")
+criteria.setString("triumph:age0/bronze_dust")
+
+setRewardFunction("triumph:age1_trigger")

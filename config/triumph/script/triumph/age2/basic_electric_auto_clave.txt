@@ -1,0 +1,18 @@
+setIcon(<gregtech:machine:110>)
+
+setTranslatedTitle("advancements.age2.basicelectricautoclave.title")
+setTranslatedDescription("advancements.age2.basicelectricautoclave.description")
+
+addParent("triumph:age2/lv_electric_pump")
+addParent("triumph:age2/lv_machine_hull")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<gregtech:machine:110>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

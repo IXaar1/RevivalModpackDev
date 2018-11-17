@@ -1,0 +1,18 @@
+setTranslatedTitle("advancements.age4.root.title")
+
+setTranslatedDescription("advancements.age4.root.description")
+
+setIcon(<minecraft:stone>)
+
+setBackground("resources\advancements\backgrounds/age4.png")
+
+setShowToast(false)
+
+setAnnounceToChat(false)
+
+setRequirements("any")
+
+criteria = addCriteria("completedAge0", "triumph:completed_advancement")
+criteria.setString("triumph:age0/example_item_crafted")
+
+setRewardFunction("triumph:age4_trigger")

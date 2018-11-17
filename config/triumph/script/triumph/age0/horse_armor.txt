@@ -1,0 +1,25 @@
+setIcon(<minecraft:iron_horse_armor>)
+
+setTranslatedTitle("advancements.age0.horsearmor.title")
+setTranslatedDescription("advancements.age0.horsearmor.description")
+
+addParent("triumph:age0/tame_horse")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("craftedIron", "triumph:player_crafted_item")
+criteria.setItem(<minecraft:iron_horse_armor>)
+
+criteria = addCriteria("craftedGold", "triumph:player_crafted_item")
+criteria.setItem(<minecraft:golden_horse_armor>)
+
+criteria = addCriteria("craftedDiamond", "triumph:player_crafted_item")
+criteria.setItem(<minecraft:diamond_horse_armor>)
+
+setRequirements(any)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

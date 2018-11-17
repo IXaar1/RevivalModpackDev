@@ -1,0 +1,17 @@
+setIcon(<gregtech:meta_tool:12>)
+
+setTranslatedTitle("advancements.age0.flintmortar.title")
+setTranslatedDescription("advancements.age0.flintmortar.description")
+
+addParent("triumph:age0/furnace")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<gregtech:meta_tool:12>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

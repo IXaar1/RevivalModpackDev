@@ -1,0 +1,19 @@
+setIcon(<gregtech:meta_item_1:32701>)
+
+setTranslatedTitle("advancements.age2.basicelectroniccircuit.title")
+setTranslatedDescription("advancements.age2.basicelectroniccircuit.description")
+
+addParent("triumph:age2/wire_cutter")
+addParent("triumph:age1/redstone")
+addParent("triumph:age1/lv_copper_wire")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<ore:circuitBasic>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

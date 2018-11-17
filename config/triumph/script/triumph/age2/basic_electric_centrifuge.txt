@@ -1,0 +1,17 @@
+setIcon(<gregtech:machine:150>)
+
+setTranslatedTitle("advancements.age2.basicelectriccentrifuge.title")
+setTranslatedDescription("advancements.age2.basicelectriccentrifuge.description")
+
+addParent("triumph:age2/electric_motor")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<gregtech:machine:150>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

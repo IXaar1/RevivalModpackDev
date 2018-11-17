@@ -1,0 +1,18 @@
+setIcon(<gregtech:meta_item_2:3220>)
+
+setTranslatedTitle("advancements.age0.flintaxehead.title")
+setTranslatedDescription("advancements.age0.flintaxehead.description")
+
+addParent("triumph:age0/stick")
+addParent("triumph:age0/flint")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<ore:toolHeadAxeFlint>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

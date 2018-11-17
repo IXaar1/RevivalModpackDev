@@ -1,0 +1,18 @@
+setIcon(<gregtech:machine:2>)
+
+setTranslatedTitle("advancements.age1.highsteamcoilboiler.title")
+setTranslatedDescription("advancements.age1.highsteamcoilboiler.description")
+
+addParent("triumph:age1/bricked_steel_hull")
+addParent("triumph:age1/small_steam_coil_boiler")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<gregtech:machine:2>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

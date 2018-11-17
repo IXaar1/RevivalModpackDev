@@ -1,0 +1,17 @@
+setIcon(<gregtech:meta_item_1:10197>)
+
+setTranslatedTitle("advancements.age1.wroughtiron.title")
+setTranslatedDescription("advancements.age1.wroughtiron.description")
+
+addParent("triumph:age1/iron_ore")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<ore:ingotWroughtIron>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

@@ -1,0 +1,33 @@
+setIcon(<gregtech:ore_redstone_0:10>)
+
+setTranslatedTitle("advancements.age1.redstoneore.title")
+setTranslatedDescription("advancements.age1.redstoneore.description")
+
+addParent("triumph:age1/tough_prospector")
+
+hideLines()
+
+criteria = addCriteria("brokeRedstone", "triumph:player_break_block")
+criteria.setBlock(<ore:oreRedstone>)
+criteria = addCriteria("brokeRedstone", "triumph:player_break_block")
+criteria.setBlock(<ore:oreSandRedstone>)
+criteria = addCriteria("brokeRedstone", "triumph:player_break_block")
+criteria.setBlock(<ore:oreMarbleRedstone>)
+criteria = addCriteria("brokeRedstone", "triumph:player_break_block")
+criteria.setBlock(<ore:oreBlackgraniteRedstone>)
+criteria = addCriteria("brokeRedstone", "triumph:player_break_block")
+criteria.setBlock(<ore:oreRedgraniteRedstone>)
+criteria = addCriteria("brokeRedstone", "triumph:player_break_block")
+criteria.setBlock(<ore:oreEndstoneRedstone>)
+criteria = addCriteria("brokeRedstone", "triumph:player_break_block")
+criteria.setBlock(<ore:oreNetherrackRedstone>)
+criteria = addCriteria("brokeRedstone", "triumph:player_break_block")
+criteria.setBlock(<ore:oreGravelRedstone>)
+criteria = addCriteria("brokeRedstone", "triumph:player_break_block")
+criteria.setBlock(<ore:oreBasaltRedstone>)
+setRequirements("any")
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

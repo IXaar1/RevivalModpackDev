@@ -1,0 +1,18 @@
+setIcon(<gregtech:meta_tool>)
+
+setTranslatedTitle("advancements.age0.flintsword.title")
+setTranslatedDescription("advancements.age0.flintsword.description")
+
+addParent("triumph:age0/crafting_table")
+addParent("triumph:age0/flint")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<ore:craftingToolSword>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

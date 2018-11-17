@@ -1,0 +1,17 @@
+setIcon(<gregtech:meta_tool:6>)
+
+setTranslatedTitle("advancements.age0.hardhammer.title")
+setTranslatedDescription("advancements.age0.hardhammer.description")
+
+addParent("triumph:age1/age1")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<ore:craftingToolHardHammer>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

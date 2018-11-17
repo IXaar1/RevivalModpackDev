@@ -1,0 +1,20 @@
+setIcon(<gregtech:machine:3>)
+
+setTranslatedTitle("advancements.age1.steamsolarboiler.title")
+setTranslatedDescription("advancements.age1.steamsolarboiler.description")
+
+addParent("triumph:age1/bricked_bronze_hull")
+addParent("triumph:age1/hard_hammer")
+addParent("triumph:age1/small_bronze_pipe")
+addParent("triumph:age1/silver_ore")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<gregtech:machine:3>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)

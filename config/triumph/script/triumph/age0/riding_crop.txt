@@ -1,0 +1,17 @@
+setIcon(<animania:riding_crop>)
+
+setTranslatedTitle("advancements.age0.ridingcrop.title")
+setTranslatedDescription("advancements.age0.ridingcrop.description")
+
+addParent("triumph:age0/saddle")
+setRequiresParents()
+
+hideLines()
+
+criteria = addCriteria("crafted", "triumph:player_crafted_item")
+criteria.setItem(<animania:riding_crop>)
+
+//By not setting anything about requirements here, all criteria are automatically required
+
+//Rewards
+setRewardExperience(4)
