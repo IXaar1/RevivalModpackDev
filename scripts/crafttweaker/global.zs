@@ -26,6 +26,9 @@ global pumpLV as IItemStack = <gregtech:meta_item_1:32610>;
 global MEGlassCable as IItemStack = <appliedenergistics2:part:16>;
 global casingEV as IItemStack = <gregtech:machine_casing:4>;
 global screwTitanium as IItemStack = <gregtech:meta_item_1:17072>;
+global pistonHV as IItemStack = <gregtech:meta_item_1:32642>;
+global emitterHV as IItemStack = <gregtech:meta_item_1:32682>;
+global screwStainlessSteel as IItemStack = <gregtech:meta_item_1:17183>;
 //oredict
 global plateIron as IOreDictEntry = <ore:plateIron>;
 global plateSteel as IOreDictEntry = <ore:plateSteel>;
@@ -52,4 +55,10 @@ global plateDenseRedAlloy as IOreDictEntry = <ore:plateDenseRedAlloy>;
 global plateDenseCopper as IOreDictEntry = <ore:plateDenseCopper>;
 global ingotRedAlloy as IOreDictEntry = <ore:ingotRedAlloy>;
 global circuitAdvanced as IOreDictEntry = <ore:circuitAdvanced>;
+global plateGlowstone as IOreDictEntry = <ore:plateGlowstone>;
+global stickCertusQuartz as IOreDictEntry = <ore:stickCertusQuartz>;
+global stickNetherQuartz as IOreDictEntry = <ore:stickNetherQuartz>;
+global plateEnderEye as IOreDictEntry = <ore:plateEnderEye>;
+global plateCertusQuartz as IOreDictEntry = <ore:plateCertusQuartz>;
+global plateRedAlloy as IOreDictEntry = <ore:plateRedAlloy>;
 

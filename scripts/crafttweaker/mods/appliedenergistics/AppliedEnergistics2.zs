@@ -10,6 +10,7 @@ val engraver as RecipeMap = RecipeMap.getByName("laser_engraver");
 val press as RecipeMap = RecipeMap.getByName("forming_press");
 val fluidcanner as RecipeMap = RecipeMap.getByName("fluid_canner");
 
+//Recipes
 //Printed calculation circuit
 recipes.remove(<appliedenergistics2:material:16>);
 Inscriber.removeRecipe(<appliedenergistics2:material:17>); 
@@ -191,6 +192,146 @@ recipes.addShaped(<appliedenergistics2:io_port>,[
 	[MEGlassCable,plateTitanium,MEGlassCable],
 	[<appliedenergistics2:drive>,<appliedenergistics2:quartz_vibrant_glass>,<appliedenergistics2:drive>],
 	[plateTitanium,<appliedenergistics2:material:22>,plateTitanium]]);
+	
+//Matter condenser
+recipes.addShaped(<appliedenergistics2:condenser>,[
+	[plateTitanium,pistonHV,plateTitanium],
+	[emitterHV,<gregtech:machine_casing:4>,wrench],
+	[plateTitanium,pistonHV,plateTitanium]]);
+	
+//Energy acceptor
+recipes.remove(<appliedenergistics2:energy_acceptor>);
+recipes.addShaped(<appliedenergistics2:energy_acceptor>,[
+	[plateTitanium,<appliedenergistics2:material:7>,plateTitanium],
+	[<appliedenergistics2:material:7>,plateGlowstone,<appliedenergistics2:material:7>],
+	[plateTitanium,<appliedenergistics2:material:7>,plateTitanium]]);
+	
+	
+//ME security terminal
+recipes.remove(<appliedenergistics2:security_station>);
+recipes.addShaped(<appliedenergistics2:security_station>,[
+	[plateTitanium,<appliedenergistics2:chest>,plateTitanium],
+	[MEGlassCable,<appliedenergistics2:material:37>,MEGlassCable],
+	[plateTitanium,<appliedenergistics2:material:24>,plateTitanium]]);	
+	
+//Fluix glass cable
+recipes.remove(MEGlassCable);
+recipes.addShaped(MEGlassCable*3,[
+	[stickCertusQuartz,<appliedenergistics2:material:7>,stickCertusQuartz],
+	[<appliedenergistics2:part:140>,<appliedenergistics2:part:140>,<appliedenergistics2:part:140>],
+	[stickCertusQuartz,<appliedenergistics2:material:7>,stickCertusQuartz]]);
+	
+//ME covered cable
+recipes.remove(<appliedenergistics2:part:36>);
+assembler.recipeBuilder()
+    .inputs([<appliedenergistics2:part:16> * 1])
+		.fluidInputs([<liquid:rubber>*1152])
+			.property("circuit", 25)
+    .outputs(<appliedenergistics2:part:36> * 1)
+    .duration(200)
+    .EUt(128)
+    .buildAndRegister();
+	
+//Annihilation core
+recipes.remove(<appliedenergistics2:material:44>);
+assembler.recipeBuilder()
+    .inputs([<appliedenergistics2:material:12>*2,stickNetherQuartz*4,<appliedenergistics2:material:22>*2])
+    .outputs(<appliedenergistics2:material:44>*2)
+    .duration(1200)
+    .EUt(128)
+    .buildAndRegister();
+	
+//Formation core
+recipes.remove(<appliedenergistics2:material:43>);
+assembler.recipeBuilder()
+    .inputs([<appliedenergistics2:material:12>*2,stickCertusQuartz*4,<appliedenergistics2:material:22>*2])
+    .outputs(<appliedenergistics2:material:43>*2)
+    .duration(1200)
+    .EUt(128)
+    .buildAndRegister();
+	
+//Fluix pearl
+recipes.remove(<appliedenergistics2:material:9>);
+assembler.recipeBuilder()
+    .inputs([plateEnderEye*4,<appliedenergistics2:material:12>*4,<minecraft:ender_pearl>*2])
+    .outputs(<appliedenergistics2:material:9>*2)
+    .duration(1800)
+    .EUt(128)
+    .buildAndRegister();
+	
+//Wireless receiver
+recipes.remove(<appliedenergistics2:material:41>);
+press.recipeBuilder()
+    .inputs([<appliedenergistics2:part:140>*2,<ore:dustEnderEye>*1,circuitAdvanced*1,<appliedenergistics2:material:9>*1,plateCertusQuartz*2])
+    .outputs(<appliedenergistics2:material:41> * 1)
+    .duration(200)
+    .EUt(512)
+    .buildAndRegister();
+	
+//Illuminated panel
+recipes.remove(<appliedenergistics2:part:180>);
+recipes.addShapeless(<appliedenergistics2:part:180>,[<appliedenergistics2:part:200>]);
+
+recipes.addShaped(<appliedenergistics2:part:180>,[
+	[screwDriver,plateTitanium,hammer],
+	[screwStainlessSteel,<projectred-core:resource_item:510>,screwStainlessSteel],
+	[plateGlowstone,plateRedAlloy,plateGlowstone]]);
+	
+//ME terminal
+recipes.remove(<appliedenergistics2:part:380>);
+assembler.recipeBuilder()
+    .inputs([plateCertusQuartz*4,circuitGood*2,<ore:itemIlluminatedPanel>])
+    .outputs(<appliedenergistics2:part:380>*1)
+    .duration(1800)
+    .EUt(256)
+    .buildAndRegister();
+	
+//ME crafting terminal
+recipes.remove(<appliedenergistics2:part:360>);
+assembler.recipeBuilder()
+    .inputs([<appliedenergistics2:part:380>*1,<appliedenergistics2:material:24>*2,<engineersworkshop:blocktable>*1])
+    .outputs(<appliedenergistics2:part:360>*1)
+    .duration(800)
+    .EUt(256)
+    .buildAndRegister();
+	
+//ME inteface terminal
+recipes.remove(<appliedenergistics2:part:480>);
+assembler.recipeBuilder()
+    .inputs([<appliedenergistics2:part:440>*1,<appliedenergistics2:part:380>*1,<appliedenergistics2:material:24>*2])
+    .outputs(<appliedenergistics2:part:480>*1)
+    .duration(800)
+    .EUt(256)
+    .buildAndRegister();
+	
+//ME conversion monitor
+recipes.remove(<appliedenergistics2:part:420>);
+assembler.recipeBuilder()
+    .inputs([<appliedenergistics2:material:44>*2,<appliedenergistics2:part:380>*1,<appliedenergistics2:material:24>*2])
+    .outputs(<appliedenergistics2:part:420>*1)
+    .duration(800)
+    .EUt(256)
+    .buildAndRegister();
+	
+//ME Pattern terminal
+recipes.remove(<appliedenergistics2:part:340>);
+assembler.recipeBuilder()
+    .inputs([<appliedenergistics2:material:52>*1,<appliedenergistics2:part:380>*1,<appliedenergistics2:material:24>*2])
+    .outputs(<appliedenergistics2:part:340>*1)
+    .duration(800)
+    .EUt(256)
+    .buildAndRegister();
+	
+//ME wireless terminal
+recipes.remove(<appliedenergistics2:wireless_terminal>);
+recipes.addShaped(<appliedenergistics2:wireless_terminal>,[
+	[<appliedenergistics2:material:41>,<appliedenergistics2:part:380>,<appliedenergistics2:material:41>],
+	[plateCertusQuartz,<appliedenergistics2:material:24>,plateCertusQuartz],
+	[plateCertusQuartz,<gregtech:meta_item_1:32531>,plateCertusQuartz]]);
+
+
+
+
 	
 	
 	
